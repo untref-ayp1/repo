@@ -19,7 +19,7 @@ public class PilotoDeEjemplo extends PilotoBase {
         }
     }
 
-    int destruirAsteroideHacia(Direccion direccion) {
+    public int destruirAsteroideHacia(Direccion direccion) {       
         int ataques = 0;
         while (navePilotada.hayAsteroideHacia(direccion)) {
             navePilotada.atacarHacia(direccion);

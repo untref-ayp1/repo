@@ -1,4 +1,5 @@
 import greenfoot.*;
+import java.util.LinkedList;
 
 public class NaveDeAtaque extends NaveAliada implements Atacante {
 
@@ -7,6 +8,8 @@ public class NaveDeAtaque extends NaveAliada implements Atacante {
      */
     protected boolean motoresEncendidos = false;
     protected PilotoBase piloto;
+    
+    protected LinkedList<Direccion> movimientos = new LinkedList<Direccion>();
 
     /**
      * Inicializa una nueva NaveDeAtaque con los motores apagados
@@ -111,7 +114,14 @@ public class NaveDeAtaque extends NaveAliada implements Atacante {
      * @see NaveAliada#moverHacia(Direccion)
      */
     public void avanzarHacia(Direccion direccion) {
-        super.moverHacia(direccion);
+        int xPrevio = this.getX();
+        int yPrevio = this.getY();
+        
+        if (super.moverHacia(direccion)) {
+            this.movimientos.add(direccion);
+            this.direccion = direccion;
+            actualizarEstela(xPrevio, yPrevio);
+        }
     }
 
     /**
@@ -239,7 +249,7 @@ public class NaveDeAtaque extends NaveAliada implements Atacante {
         canvas.setColor(obtenerColorDeBarraIndicadora());
 
         canvas.fillRect(6, imagenBase.getHeight(),
-                (int) ((getWorld().getCellSize() - 10) * obtenerProporcionDeBarraIndicadora()), 8);
+            (int) ((getWorld().getCellSize() - 10) * obtenerProporcionDeBarraIndicadora()), 8);
 
         canvas.rotate(360 - direccion.rotacion);
 
@@ -248,6 +258,16 @@ public class NaveDeAtaque extends NaveAliada implements Atacante {
 
         if (this.piloto != null) {
             canvas.highlight(this.piloto.getAura());
+        }
+    }
+
+    private void actualizarEstela(int xPrevio, int yPrevio) {
+        // La estela sirve para poder repasar el recorrido que realizó la nave, y de esa forma resolver errores.
+        // Si deseas que la estela NO se dibuje, cambia este true por false
+        if (true) {
+            GreenfootImage fragmentoEstela = Estela.obtenerFragmentoEstela(this.movimientos, this.piloto.getAura(), getWorld());
+            int tamCelda = getWorld().getCellSize();
+            getWorld().getBackground().drawImage(fragmentoEstela, xPrevio * tamCelda, yPrevio * tamCelda);
         }
     }
 }

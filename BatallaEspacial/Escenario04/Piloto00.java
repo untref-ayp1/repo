@@ -34,4 +34,24 @@ public class Piloto00 extends PilotoBase {
         destruirAsteroideHacia(Direccion.NORTE);
         avanzarAlNortePor(3);
     }
+    
+    int avanzarHastaAsteroideHacia(Direccion direccion) {
+        int contador = 0;
+        while(!navePilotada.hayAsteroideHacia(direccion)) {
+            navePilotada.avanzarHacia(direccion);
+            contador++;
+        }
+        return contador;
+    }
+    
+    void avanzarHaciaPor(Direccion direccion, int pasos) {
+        for(int i = 1; i <= pasos; i++) {
+            navePilotada.avanzarHacia(direccion);
+        }
+    }
+    
+    void irAlAsteroideVolver(Direccion direccion) {
+        int pasos = avanzarHastaAsteroideHacia(direccion);
+        avanzarHaciaPor(direccion.opuesta(), pasos);
+    }
 }

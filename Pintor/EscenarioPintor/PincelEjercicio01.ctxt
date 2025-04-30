@@ -1,5 +1,11 @@
 #BlueJ class context
 comment0.target=PincelEjercicio01
 comment1.params=
-comment1.target=void\ pintar()
-numComments=2
+comment1.target=void\ pintar2()
+comment2.params=
+comment2.target=void\ pintar()
+comment3.params=tam\ x\ y
+comment3.target=void\ pintarCuadrado(int,\ int,\ int)
+comment4.params=tam\ x\ y
+comment4.target=void\ pintarTechito(int,\ int,\ int)
+numComments=5

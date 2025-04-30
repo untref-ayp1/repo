@@ -1,9 +1,18 @@
 #BlueJ class context
 comment0.target=Direccion
+comment0.text=\n\ Modela\ las\ direcciones\ que\ se\ utilizan\ en\ cada\ escenario\n
 comment1.params=rotacion\ dx\ dy
 comment1.target=Direccion(int,\ int,\ int)
 comment2.params=
 comment2.target=Direccion\ opuesta()
-comment3.params=x0\ y0\ x1\ y1
-comment3.target=Direccion\ flecha(int,\ int,\ int,\ int)
-numComments=4
+comment2.text=\n\ @return\ la\ direcci\u00F3n\ opuesta\ a\ la\ direcci\u00F3n\ actual\n
+comment3.params=
+comment3.target=Direccion\ derecha()
+comment3.text=\n\ @return\ la\ direcci\u00F3n\ a\ la\ derecha\ de\ la\ direcci\u00F3n\ actual\n
+comment4.params=
+comment4.target=Direccion\ izquierda()
+comment4.text=\n\ @return\ la\ direcci\u00F3n\ a\ la\ izquierda\ de\ la\ direcci\u00F3n\ actual\n
+comment5.params=x0\ y0\ x1\ y1
+comment5.target=Direccion\ flecha(int,\ int,\ int,\ int)
+comment5.text=\n\ Calcula\ la\ direcci\u00F3n\ hacia\ la\ que\ apunta\ el\ vector\ definido\ por\ los\ cuatro\n\ par\u00E1metros.\ <br>\n\ pre\:\ el\ punto\ inicial\ y\ el\ punto\ final\ no\ deben\ ser\ coincidentes\n\ \n\ @param\ x0\ la\ x\ inicial\n\ @param\ y0\ la\ y\ inicial\n\ @param\ x1\ la\ x\ final\n\ @param\ y1\ la\ y\ final\n\ @return\ la\ direcci\u00F3n\ en\ la\ que\ apunta\ dicho\ vector\n
+numComments=6

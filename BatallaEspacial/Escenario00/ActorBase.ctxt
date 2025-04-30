@@ -7,6 +7,4 @@ comment1.text=\n\ Punto\ de\ extensi\u00F3n\ para\ definir\ c\u00F3mo\ debe\ act
 comment2.params=world
 comment2.target=void\ addedToWorld(greenfoot.World)
 comment2.text=\n\ Captura\ las\ caracter\u00EDsticas\ del\ Actor\ al\ ser\ agregado\ al\ Mundo\n
-comment3.params=max\ min
-comment3.target=int\ generarNumero(int,\ int)
-numComments=4
+numComments=3

@@ -3,7 +3,7 @@ import greenfoot.*;
 public class Mundo00 extends MundoBase {
 
     public Mundo00() {
-        super(6, 5, 100);
+        super(6, 5);
     }
 
     protected void generarNaves() {
@@ -19,6 +19,7 @@ public class Mundo00 extends MundoBase {
 
     protected void generarPOIs() {
         marcarCelda(0, 0, new Color(0, 0, 200, 150));
+        marcarCelda(5, 0, new Color(200, 0, 0, 150));
     }
 
     protected void generarItems() {

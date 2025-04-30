@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Estela
+comment1.params=movimientos\ colorEstela\ world
+comment1.target=greenfoot.GreenfootImage\ obtenerFragmentoEstela(java.util.LinkedList,\ greenfoot.Color,\ greenfoot.World)
+comment2.params=fraccion\ tamCelda
+comment2.target=int\ calcularPosicion(double,\ int)
+comment3.params=img\ grosor\ tamCelda
+comment3.target=void\ dibujarEstelaRecta(greenfoot.GreenfootImage,\ int,\ int)
+comment4.params=img\ grosor\ tamCelda
+comment4.target=void\ dibujarVueltaEnU(greenfoot.GreenfootImage,\ int,\ int)
+comment5.params=img\ dirPrev\ dirActual\ grosor\ tamCelda
+comment5.target=void\ dibujarCurva(greenfoot.GreenfootImage,\ Direccion,\ Direccion,\ int,\ int)
+comment6.params=x0\ y0\ x1\ y1\ grosor\ img
+comment6.target=void\ linea(int,\ int,\ int,\ int,\ int,\ greenfoot.GreenfootImage)
+numComments=7

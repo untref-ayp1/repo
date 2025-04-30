@@ -10,9 +10,5 @@ public class Pincel extends PincelBase {
     @Override
     public void pintar() {
         int tamaño = obtenerTamañoDelLienzo();
-
-        for (int i = 0; i < tamaño; i++) {
-            pintar(i, i);
-        }
     }
 }

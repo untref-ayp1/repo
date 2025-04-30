@@ -48,6 +48,8 @@ public abstract class PincelBase extends Actor {
         GreenfootSound sound = new GreenfootSound("brush.wav");
         sound.play();
 
+        //System.out.println(i + " " + j);
+        
         this.setLocation(j, i);
         lienzo.marcarCelda(j, i, tinta.color);
 
