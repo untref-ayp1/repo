@@ -1,6 +1,6 @@
-# Algoritmos y Programación 1 — Material de la materia (UNTreF)
+# Algoritmos y Programación 1 - UNTreF
 
-Este repositorio contiene el material de la cátedra *Algoritmos y Programación 1* de la UNTreF. Acá vas a encontrar guías, enunciados, ejemplos y códigos usados a lo largo del cuatrimestre.
+Este repositorio contiene el material de la cátedra Algoritmos y Programación 1 de la UNTreF. Acá vas a encontrar guías, enunciados, ejemplos y códigos usados a lo largo del cuatrimestre.
 
 ## Estructura del repositorio
 
