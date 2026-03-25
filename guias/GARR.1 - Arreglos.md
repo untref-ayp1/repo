@@ -201,6 +201,7 @@ Salida esperada
 > Para el autor con más títulos, no hay colecciones disponibles: tenés que resolver el conteo usando solo el array y variables auxiliares.
 
 ## Parte D: Desafío
+En esta sección se propone un problema más abierto que integra los conceptos trabajados. El foco está en diseñar una estrategia propia para recorrer el arreglo y detectar condiciones, priorizando el razonamiento por sobre la aplicación directa de técnicas.
 
 ### D1. La cuenta bancaria del viajero
 Un viajero registra los gastos diarios de su viaje en un arreglo de números enteros positivos. Cada valor representa cuánto dinero gastó en un día.
