@@ -1,10 +1,14 @@
 import greenfoot.*;
+import java.util.List;
+import java.util.LinkedList;
 
 public class Mundo extends World {
     private static int width = 600;
     private static int height = 400;
     private static int cell = 50;
-    private Color FONDO = new Color(33, 34, 44);
+    private static final Color COLOR_FONDO = new Color(33, 34, 44);
+    
+    private List<String> log = new LinkedList<String>();
     
     private Cartel cartel;
     
@@ -15,6 +19,10 @@ public class Mundo extends World {
         this.cartel = new Cartel();
         addObject(cartel, 535, 370);
         usarTortugaVerde();
+    }
+    
+    void log(String mensaje) {
+        this.log.add(mensaje);
     }
     
     public void limpiar() {
@@ -32,14 +40,25 @@ public class Mundo extends World {
         getBackground().setColor(colorAnterior);
     }
     
+    public void verHistorial() {
+        for(String s : log) {
+            System.out.println(s);
+        }
+        System.out.println("---");
+    }
+    
+    public void limpiarHistorial() {
+        this.log.clear();
+    }
+    
     private void pintarFondo() {
-        getBackground().setColor(FONDO);
+        getBackground().setColor(COLOR_FONDO);
         getBackground().fillRect(0, 0, width, height);
     }
     
     private void dibujarGrilla() {
-        for (int x = 0; x < getWidth(); x++) {
-            for (int y = 0; y < getHeight(); y++) {
+    for (int x = 0; x * cell < getWidth(); x++) {
+        for (int y = 0; y * cell < getHeight(); y++) {
                 getBackground().setColor(Color.DARK_GRAY);
                 getBackground().drawRect(x * cell, y * cell, cell, cell);
             }

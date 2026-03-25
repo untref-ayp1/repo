@@ -5,6 +5,8 @@ public abstract class Tortuga extends Actor {
     protected boolean dibujar = true;
     protected int grosor = 5;
     
+    private Cartel cartel;
+    
     private static Color[] colores = {
         new Color(189, 147, 249), // Dracula Purple
         new Color(241, 250, 140), // Dracula Yellow
@@ -17,55 +19,54 @@ public abstract class Tortuga extends Actor {
     private int colorActual = 0;
     
     protected void addedToWorld(World world) {
+        this.cartel = ((Mundo)getWorld()).getObjects(Cartel.class).get(0);
         cambiarColor();
     }
     
-    private Cartel getCartel() {
-        return ((Mundo)getWorld()).getObjects(Cartel.class).get(0);
-    }
-      
-    public void adelante(int pasos) {
-        int x0 = this.getX();
-        int y0 = this.getY();
-        this.move(pasos);
-        int x1 = this.getX();
-        int y1 = this.getY();
-        linea(x0, y0, x1, y1);
-        
-        Cartel cartel = getCartel();
-        cartel.contarDistancia(Math.abs(pasos));
+    private void registrarAccion(String mensaje) {
         cartel.contarPaso();
-        
+        ((Mundo)getWorld()).log(mensaje);
+    }
+    
+    public void adelante(int pasos) {
+        mover(pasos);
+        registrarAccion("adelante(" + pasos + ")");
+    }
+    
+    public void atras(int pasos) {
+        mover(-pasos);
+        registrarAccion("atras(" + pasos + ")");
+    }
+    
+    private void mover(int pasos) {
+        int x0 = getX(), y0 = getY();
+        move(pasos);
+        linea(x0, y0, getX(), getY());
+        this.cartel.contarDistancia(Math.abs(pasos));
         Greenfoot.delay(1);
     }
     
     private void linea(int x0, int y0, int x1, int y1) {
+        if (!dibujar) return;
+        
         int medio = grosor/2;
-        if (dibujar) {
-            for (int i = -medio; i <= medio; i++) {
-                for (int j = -medio; j <= medio; j++) {
-                    if (Math.abs(i) + Math.abs(j) <= medio) {
-                        getWorld().getBackground().drawLine(x0 + i, y0 + j, x1 + i, y1 + j);
-                    }
+        for (int i = -medio; i <= medio; i++) {
+            for (int j = -medio; j <= medio; j++) {
+                if (Math.abs(i) + Math.abs(j) <= medio) {
+                    getWorld().getBackground().drawLine(x0 + i, y0 + j, x1 + i, y1 + j);
                 }
             }
         }
     }
     
-    public void atras(int pasos) {
-        this.adelante(-pasos);
-    }
-    
     public void derecha(int grados) {
         this.turn(grados);
-        Cartel cartel = getCartel();
-        cartel.contarPaso();
+        registrarAccion("derecha(" + grados + ")");
     }
     
     public void izquierda(int grados) {
         this.turn(-grados);
-        Cartel cartel = getCartel();
-        cartel.contarPaso();
+        registrarAccion("izquierdo(" + grados + ")");
     }
     
     public void morir() {
@@ -77,14 +78,12 @@ public abstract class Tortuga extends Actor {
     // Métodos del trazo
     public void subirLapiz() {
         this.dibujar = false;
-        Cartel cartel = getCartel();
-        cartel.contarPaso();
+        registrarAccion("subirLapiz()");
     }
     
     public void bajarLapiz() {
         this.dibujar = true;
-        Cartel cartel = getCartel();
-        cartel.contarPaso();
+        registrarAccion("subirLapiz()");
     }
     
     public void cambiarColor() {
