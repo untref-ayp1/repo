@@ -6,7 +6,7 @@ Escribir el método solicitado. Agregar pre y post-condición. Utilizar buena in
 
 Dada una matriz de enteros de n filas por m columnas, hallar el máximo valor absoluto.
 
-```
+```java
 int máximoValorAbsoluto(int[][] matriz)
 ```
 
