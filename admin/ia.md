@@ -12,7 +12,11 @@ La IA también puede hacer todo el trabajo por vos: escribir el código completo
 
 ## Desconfiá de lo que genera
 
-Las IAs cometen errores, y los errores en código son especialmente difíciles de detectar porque el resultado puede parecer correcto. Es común que generen código que compila y corre, pero falla en casos que no consideraron, que usen funciones que no existen o que resuelvan el problema de una manera que no tiene relación con los conceptos que vimos en clase. Siempre revisá lo que genera con atención, no lo copies sin entenderlo.
+Las IAs cometen errores, y los errores en código son especialmente difíciles de detectar porque el resultado puede parecer correcto. Es común que generen código que compila y corre, pero falla en casos que no consideraron, que usen funciones que no existen o que resuelvan el problema de una manera que no tiene relación con los conceptos que vimos en clase.
+
+> **Ojo con la adulación:** La IA tiene una tendencia natural a darte la razón. Si le preguntás "¿Está bien este razonamiento?", es muy probable que te diga que si, incluso si hay algún error de concepto. No asumas que su validación es una verdad absoluta. A veces solo refleja lo que vos mismo le escribiste.
+
+Siempre revisá lo que genera con atención, no lo copies sin entenderlo.
 
 
 ## ¿Cómo saber si realmente aprendiste?
