@@ -1,6 +1,31 @@
 import greenfoot.*;
 
 class Howard extends PilotoBase {
+    
+    void mision04(NaveDeAtaque nave) {
+        subirse(nave);
+        nave.encenderMotores(); 
+        
+        nave.avanzarHacia(Direccion.NORTE);
+        nave.avanzarHacia(Direccion.NORTE);
+        
+        nave.atacarHacia(Direccion.NORTE);
+        nave.atacarHacia(Direccion.NORTE);
+        nave.atacarHacia(Direccion.NORTE);
+        nave.atacarHacia(Direccion.NORTE);
+        
+        nave.avanzarHacia(Direccion.NORTE);
+        nave.avanzarHacia(Direccion.NORTE);
+        
+        nave.avanzarHacia(Direccion.SUR);
+        nave.avanzarHacia(Direccion.SUR);
+        nave.avanzarHacia(Direccion.SUR);
+        nave.avanzarHacia(Direccion.SUR);
+        
+        nave.apagarMotores();
+        bajarse();
+    }
+    
     void probarNave(NaveDeAtaque nave) {
         subirse(nave);
         nave.encenderMotores();

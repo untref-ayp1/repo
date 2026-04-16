@@ -1,13 +1,15 @@
 #BlueJ class context
 comment0.target=Howard
 comment1.params=nave
-comment1.target=void\ probarNave(NaveDeAtaque)
+comment1.target=void\ mision04(NaveDeAtaque)
 comment2.params=nave
-comment2.target=void\ probarNave2(NaveDeAtaque)
+comment2.target=void\ probarNave(NaveDeAtaque)
 comment3.params=nave
-comment3.target=void\ despegar(NaveDeAtaque)
+comment3.target=void\ probarNave2(NaveDeAtaque)
 comment4.params=nave
-comment4.target=void\ maniobrar(NaveDeAtaque)
+comment4.target=void\ despegar(NaveDeAtaque)
 comment5.params=nave
-comment5.target=void\ aterrizar(NaveDeAtaque)
-numComments=6
+comment5.target=void\ maniobrar(NaveDeAtaque)
+comment6.params=nave
+comment6.target=void\ aterrizar(NaveDeAtaque)
+numComments=7

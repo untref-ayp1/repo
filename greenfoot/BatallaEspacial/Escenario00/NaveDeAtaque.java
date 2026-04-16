@@ -265,7 +265,8 @@ public class NaveDeAtaque extends NaveAliada implements Atacante {
         // La estela sirve para poder repasar el recorrido que realizó la nave, y de esa forma resolver errores.
         // Si deseas que la estela NO se dibuje, cambia este true por false
         if (true) {
-            GreenfootImage fragmentoEstela = Estela.obtenerFragmentoEstela(this.movimientos, this.piloto.getAura(), getWorld());
+            Color aura = this.piloto != null ? this.piloto.getAura() : MyGreenfootImage.AURAS[0];
+            GreenfootImage fragmentoEstela = Estela.obtenerFragmentoEstela(this.movimientos, aura, getWorld());
             int tamCelda = getWorld().getCellSize();
             getWorld().getBackground().drawImage(fragmentoEstela, xPrevio * tamCelda, yPrevio * tamCelda);
         }
