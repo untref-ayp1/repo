@@ -72,6 +72,17 @@ Para cada caso:
 3. Explicar qué parte de la expresión se evalúa y cuál no, y por qué.
 4. Identificar en cuáles casos el uso del cortocircuito evita el error.
 
+### Auto-diagnóstico
+
+1. Sin mirar ningún código, ¿podés decir de memoria qué valor devuelve `!(!(false))` y por qué?
+
+> Si no podés responderla: repasá cómo funciona la doble negación y la tabla de verdad del operador `!`.
+
+
+2. Si el primer operando de un `&&` es `false`, ¿qué pasa con el segundo? ¿Y si el primero de un `||` es `true`? ¿Por qué eso puede evitar un error en tiempo de ejecución?
+
+> Si no podés responderla: repasá evaluación por cortocircuito y revisá el ejercicio A4, que muestra exactamente cuándo esto importa de verdad.
+
 ## Parte B: Aplicación
 En esta sección se aplican los conceptos de lógica a situaciones más concretas, donde las expresiones booleanas modelan condiciones del mundo real. Se trabaja en la construcción, lectura y evaluación de expresiones más complejas, combinando múltiples variables y prestando especial atención al orden de evaluación y al significado de cada condición.
 
@@ -139,6 +150,16 @@ boolean expresionFinal;
 expresionFinal = (((expresion5 && expresion2) || !expresion3)) && (expresion4 || !expresion1);
 ```
 
+### Auto-diagnóstico
+
+1. Dada una condición del mundo real (por ejemplo: "un equipo es campeón si ganó más partidos de los que perdió y empató"), ¿podés traducirla directamente a una expresión booleana con variables? ¿O necesitás escribir los pasos intermedios primero?
+
+> Si necesitás los pasos intermedios sí o sí: eso está bien, pero asegurate de entender por qué ayuda definir variables auxiliares, repasá la estrategia de B1.
+
+2. En una expresión larga con `&&` y `||` mezclados, ¿sabés identificar cuál operador "parte" la expresión en dos mitades principales? ¿Podés predecir el valor final sin evaluar todo?
+
+> Si no podés responderla: repasá precedencia de operadores (`!` primero, luego `&&`, luego `||`) y practicá con las expresiones de B2 y B3 antes de seguir.
+
 ## Parte C: Integración
 En esta sección se integran los distintos conceptos en problemas más desafiantes, similares a los de evaluación. El foco está en analizar expresiones complejas, razonar sobre precedencia de operadores, detectar errores de modelado lógico y reescribir condiciones para que reflejen correctamente un requerimiento dado.
 
@@ -184,11 +205,21 @@ Consignas:
     - Indicar si la expresión resultante es equivalente a la original para todos los casos posibles.
     - Explicar brevemente si la versión simplificada mejora la legibilidad o no, y por qué.
 
+### Auto-diagnóstico
+
+1. Si alguien te da una expresión booleana y una descripción en lenguaje natural, ¿podés detectar si la expresión no representa lo que dice la descripción? ¿Cuál es la primera cosa que revisarías?
+
+> Si no sabés por dónde empezar: repasá C1; el error del gerente es un buen ejemplo de cómo una precedencia mal puesta cambia completamente el significado. Revisá también cómo los paréntesis modifican el orden de evaluación.
+
+2. ¿Podés aplicar las Leyes de De Morgan paso a paso para pasar de una condición negada a una equivalente en positivo? ¿Cuál es la regla para `!(A && B)` y cuál para `!(A || B)`?
+
+> Si no las recordás: repasá las leyes de De Morgan (ejercicio A3) y el desarrollo pedido en C2; es exactamente ese proceso aplicado a un caso concreto.
+
 ## Parte D: Desafío
 En esta sección se propone un problema más abierto que requiere manipulación avanzada de expresiones booleanas. Se trabaja con simplificación algebraica, razonamiento formal y análisis del comportamiento del sistema, incluyendo aspectos como cortocircuito y equivalencias lógicas. El objetivo es profundizar la comprensión y desarrollar precisión en el razonamiento.
 
 ### D1. El Sistema de Acceso del Laboratorio
-En un laboratorio de investigación, el sistema de seguridad controla el acceso a tres zonas restringidas. Cada zona tiene su propia condición de apertura, programada por distintos desarrolladores a lo largo de los años. Antes de una auditoría, el equipo de seguridad necesita entender exactamente cómo se comporta el sistema — y si tiene fallas.
+En un laboratorio de investigación, el sistema de seguridad controla el acceso a tres zonas restringidas. Cada zona tiene su propia condición de apertura, programada por distintos desarrolladores a lo largo de los años. Antes de una auditoría, el equipo de seguridad necesita entender exactamente cómo se comporta el sistema... y si tiene fallas.
 
 Las variables representan el estado de las credenciales del visitante:
 
@@ -242,3 +273,13 @@ h) Se quiere agregar una regla global:
 Reescribir las tres condiciones incorporando esta restricción de la forma más compacta posible.
 
 i) ¿Es posible que las tres zonas sean accesibles simultáneamente para un mismo visitante (sin emergencia)? Si es así, encontrar los valores que lo permiten. Si no, demostrar por qué no.
+
+### Auto-diagnóstico
+
+1. Cuando simplificás una expresión booleana algebraicamente, ¿cómo verificás que la versión simplificada es realmente equivalente a la original? ¿Qué herramienta o método usarías?
+
+> Si no tenés una respuesta clara: repasá la idea de tabla de verdad como método de verificación, y revisá los pasos de simplificación de la Zona 1 y Zona 2. Una expresión simplificada que no es equivalente es peor que no simplificar.
+
+2. ¿Podés explicar con tus palabras por qué el cortocircuito no es solo una optimización de rendimiento, sino que a veces cambia si el programa funciona o falla?
+
+> Si no podés explicarlo: volvé a A4 y al inciso (e) de D1. La diferencia entre "se evalúa menos" y "se evita un crash" es la intuición clave de toda esa sección.

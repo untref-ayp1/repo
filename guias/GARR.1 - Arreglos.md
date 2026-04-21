@@ -91,6 +91,19 @@ Producto[] productos = {
 
 > En el punto 3: la variable para "el más caro" debería ser de tipo `Producto`, no `double`. ¿Cuál es la diferencia?
 
+### Auto-diagnóstico
+
+#### 1.
+Sin escribir código, ¿podés decir cuál es el índice del último elemento de un array de tamaño `n`? ¿Qué excepción lanza Java si te pasás de ese índice, y en qué momento ocurre: ¿al compilar o al ejecutar?
+
+> Si no podés responderla: repasá cómo funciona la indexación base-cero y el concepto de `ArrayIndexOutOfBoundsException`. Revisá el ejercicio A1.
+
+#### 2.
+
+Si calculás el promedio de un array de enteros haciendo `suma / array.length`, ¿por qué el resultado puede ser incorrecto? ¿Cómo lo corregís?
+
+> Si no podés responderla: repasá la diferencia entre división entera y división decimal en Java, y revisá la nota del ejercicio A2 sobre el cast a `double`
+
 ## Parte B: Aplicación
 En esta parte se aplican las operaciones básicas en problemas con contexto, donde es necesario combinar recorridos, condiciones y acumuladores para producir resultados más elaborados. Se trabaja especialmente en el procesamiento de datos: filtrar, contar, reorganizar e interpretar información contenida en un arreglo.
 
@@ -124,6 +137,18 @@ Dado el siguiente arreglo de ganancias, reorganizalo en un nuevo array donde tod
 ```java
 int[] ganancias = {120, -45, 300, -10, 85, -200, 60, 40, -5};
 ```
+
+### Auto-diagnóstico
+
+#### 1.
+Si necesitás construir un nuevo array con solo algunos elementos de uno original (por ejemplo, filtrando los válidos), ¿cómo sabés de antemano qué tamaño darle al nuevo array? ¿Qué estrategia usarías?
+
+Si no tenés una respuesta clara: repasá el ejercicio B2. Ese problema te obliga a pensar exactamente en eso. La solución de dos pasadas (primero contar, luego copiar) es la idea clave.
+
+#### 2.
+¿Podés describir con tus palabras la diferencia entre filtrar un array y reorganizarlo? ¿Cambia la cantidad de elementos en cada caso?
+
+> Si te cuesta distinguirlos: comparás B2 (depuración) con B3 (reporte financiero). Son dos patrones distintos que aparecen todo el tiempo al trabajar con colecciones.
 
 ## Parte C: Integración
 Esta sección integra el uso de arreglos con objetos y organización del código en clases. Se ejercita el diseño de soluciones más estructuradas, separando datos y lógica, e implementando métodos que recorren colecciones de objetos para obtener distintos resultados. El foco está en resolver problemas más completos manteniendo claridad y control sobre la complejidad.
@@ -199,6 +224,18 @@ Salida esperada
 
 > Para el autor con más títulos, no hay colecciones disponibles: tenés que resolver el conteo usando solo el array y variables auxiliares.
 
+### Auto-diagnóstico
+
+#### 1.
+Cuando un método recibe un array de objetos y tiene que encontrar "el máximo" (el más caro, el más corto, el de más stock), ¿la variable auxiliar debería ser del tipo del objeto o del tipo del atributo que comparás? ¿Qué ventaja tiene guardar la referencia al objeto completo?
+
+> Si no sabés responderla: revisá la nota del ejercicio A4 punto 3, y observá cómo se usa esa variable en C1 y C2. Guardar solo el valor numérico te hace perder información.
+
+#### 2.
+¿Podés explicar para qué sirve separar la lógica en una clase aparte (como `Libreria` en C2) en lugar de poner todo en el `main`? ¿Qué ganás y qué perdés?
+
+> Si no tenés una respuesta: repasá la introducción de la Parte C y pensá en términos de claridad, reutilización y responsabilidad de cada parte del código. La diferencia entre C1 y C2 ilustra bien los dos estilos.
+
 ## Parte D: Desafío
 En esta sección se propone un problema más abierto que integra los conceptos trabajados. El foco está en diseñar una estrategia propia para recorrer el arreglo y detectar condiciones, priorizando el razonamiento por sobre la aplicación directa de técnicas.
 
@@ -239,3 +276,10 @@ Salida esperada
     x=20 → false
 
 > **Sugerencia:** Este problema es relativamente simple, si no se restringe la cantidad de veces que puede recorrerse el array. Se puede realizar recorriendo los datos una única vez... ¿Cuándo conviene dejar de sumar?
+
+### Auto-diagnóstico
+
+#### 1.
+En el problema del viajero, ¿por qué alcanza con recorrer el array una sola vez? ¿Cuándo tiene sentido dejar de sumar y reiniciar la acumulación?
+
+> Si no podés explicarlo: la sugerencia al final del enunciado te da la pista. Pensá en qué condición hace que seguir sumando desde el inicio actual sea peor que empezar de nuevo: eso es la intuición central del algoritmo.
