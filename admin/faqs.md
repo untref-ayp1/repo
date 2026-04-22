@@ -69,6 +69,12 @@ En la cursada 2026, se tomarán 4 (cuatro) parciales breves. Las fechas están d
 
 Los parciales se aprueban con una nota mínima de 4 (cuatro). Esta nota corresponde a alcanzar al menos el 50% del puntaje total del examen. No todos los ejercicios contribuyen de la misma manera a la nota final.
 
+### ¿Qué porcentaje del examen bien resuelto se requiere para obtener un 4?
+Se requiere alcanzar el **50% del examen** correctamente resuelto.
+
+### ¿Qué porcentaje del examen bien resuelto se requiere para obtener un 7? 
+Se requiere alcanzar el **80% del examen** correctamente resuelto.
+
 ### ¿Qué pasa si desapruebo un parcial?
 
 Existe una única instancia de recuperación, en la cual se puede volver a rendir hasta dos parciales en los que no hayas alcanzado la nota de aprobación.
