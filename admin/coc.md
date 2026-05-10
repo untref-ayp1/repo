@@ -1,12 +1,15 @@
 # Código de Conducta
 
+> El código de conducta exige un ambiente de aprendizaje respetuoso y profesional, prohíbe el acoso y debates ideológicos en clases, regula el uso de tecnología y comportamiento en aulas virtuales y Slack, y establece sanciones por incumplimientos.
+
 Este código establece las expectativas para un ambiente de aprendizaje respetuoso, colaborativo y productivo para todos los miembros de la comunidad académica, incluyendo estudiantes, profesores y personal de apoyo.
 
 ## I. Interacción Respetuosa
 
-* Tratar a todos los compañeros, profesores y personal con cortesía, respeto y profesionalismo, independientemente de su origen, identidad, creencias o rol.
-* Evitar el lenguaje despectivo, ofensivo o discriminatorio, ya sea verbal, escrito o a través de medios digitales.
-* Mantener una actitud abierta y respetuosa hacia las diversas opiniones y perspectivas que se presenten en el aula.
+* **Lenguaje amable:** Tratar a todos los compañeros, profesores y personal con cortesía, respeto y profesionalismo, independientemente de su origen, identidad, creencias o rol.
+* **Tolerancia Cero al Bullying:** No se permiten burlas ni hostigamiento por el nivel de conocimiento o errores ajenos. Cualquier actitud que degrade a un compañero es motivo de sanción inmediata, sin apercibimiento previo.
+* **Neutralidad Ideológica:** Celebramos la diversidad de pensamiento, pero el laboratorio no es el lugar para manifestarla. Quedan excluidos los debates políticos, deportivos o religiosos para proteger el foco y la convivencia.
+* **Ambiente armonioso:** Mantener una actitud abierta y respetuosa hacia las diversas opiniones y perspectivas que se presenten en el aula.
 
 ## II. Comportamiento en el Aula
 
@@ -14,8 +17,6 @@ Este código establece las expectativas para un ambiente de aprendizaje respetuo
 * **Participación:** Se fomenta el debate de ideas, siempre manteniendo un tono profesional y basado en argumentos técnicos.
 * **Uso de Tecnología:** Los dispositivos móviles deben permanecer en silencio. El uso de celulares, laptops o tablets está permitido exclusivamente para actividades relacionadas con la clase (toma de apuntes, ejercicios de programación, etc.), pero **no está permitido** realizar actividades que no tengan que ver con la clase (uso de redes sociales, juegos electrónicos, mirar videos, escuchar música, etc.)
 * **Clima de trabajo:** Se debe evitar el murmullo constante que interfiera con la escucha de los demás compañeros.
-* **Tolerancia Cero al Bullying:** No se permiten burlas ni hostigamiento por el nivel de conocimiento o errores ajenos. Cualquier actitud que degrade a un compañero es motivo de sanción inmediata, sin apercibimiento previo.
-* **Neutralidad Ideológica:** Celebramos la diversidad de pensamiento, pero el laboratorio no es el lugar para manifestarla. Quedan excluidos los debates políticos, deportivos o religiosos para proteger el foco y la convivencia.
 
 ### Sobre el espacio de trabajo
 * **Estado Impecable:** Al finalizar la jornada, es responsabilidad de cada alumno dejar su espacio impecable: cerrar sesiones, organizar periféricos y dejar el puesto tal como se encontró (o mejor).
