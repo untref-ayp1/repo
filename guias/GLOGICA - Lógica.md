@@ -1,7 +1,9 @@
 # GLOGICA - Lógica
 La guía está organizada en cuatro partes de dificultad creciente y se recomienda trabajarla de manera progresiva. La **Parte A (Fundamentos)** contiene ejercicios breves orientados a fijar las ideas básicas del tema; si aparecen dificultades aquí, conviene revisar la teoría antes de continuar. La **Parte B (Aplicación)** propone problemas más completos donde se ponen en práctica esas ideas. La **Parte C (Integración)** incluye ejercicios de mayor dificultad, similares a los que podrían aparecer en un parcial. Finalmente, la **Parte D (Desafío)** presenta un problema más abierto, pensado para quienes quieran profundizar.
 
-Como referencia, la Parte A debería tomar aproximadamente 45–60 minutos, la Parte B alrededor de 1–1.5 horas, y la Parte C entre 1 y 1.5 horas. El Desafío es opcional y su tiempo puede variar. En total, se espera que la práctica requiera alrededor de 3 a 4 horas de trabajo. Como orientación para una buena preparación, se recomienda resolver todos los ejercicios de la Parte A y al menos tres ejercicios de las Partes B y C.
+Como referencia, la Parte A debería tomar aproximadamente 45-60 minutos, la Parte B alrededor de 1-1.5 horas, y la Parte C entre 1 y 1.5 horas. El Desafío es opcional y su tiempo puede variar. En total, se espera que la práctica requiera alrededor de 3 a 4 horas de trabajo. Como orientación para una buena preparación, se recomienda resolver todos los ejercicios de la Parte A y al menos tres ejercicios de las Partes B y C.
+
+---
 
 ## Parte A: Fundamentos
 En esta sección se ejercitan los conceptos básicos de la lógica booleana: operadores lógicos, evaluación de expresiones, negación y leyes fundamentales como De Morgan. El foco está en comprender cómo se construyen y evalúan las condiciones, incluyendo el comportamiento de la evaluación por cortocircuito, y en evitar errores frecuentes de interpretación.
