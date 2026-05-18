@@ -298,24 +298,24 @@ public class Matriz {
 
 Implementá los siguientes métodos **en orden**, ya que algunos se apoyan en los anteriores:
 
-1. `int filas()` — cantidad de filas.
-2. `int columnas()` — cantidad de columnas (asumí que es regular).
-3. `double obtener(int i, int j)` — valor en la posición `(i, j)`.
-4. `boolean esCuadrada()` — `true` si tiene igual cantidad de filas y columnas.
-5. `boolean esIdentidad()` — `true` si es cuadrada, tiene `1.0` en la diagonal y `0.0` en el resto.
-6. `boolean esDiagonal()` — `true` si todos los elementos fuera de la diagonal principal son `0.0`.
-7. `double traza()` — suma de los elementos de la diagonal principal. Requiere que sea cuadrada.
-8. `boolean esSimetrica()` — `true` si `valores[i][j] == valores[j][i]` para todo `(i, j)`.
-9. `boolean equals(Matriz otra)` — `true` si tienen las mismas dimensiones y valores posición a posición.
-10. `Matriz copiar()` — devuelve una nueva `Matriz` con los mismos valores (copia profunda).
-11. `void multiplicarFila(int fila, double escalar)` — multiplica in-place todos los valores de una fila.
-12. `Matriz escalar(double k)` — devuelve una nueva `Matriz` con todos los valores multiplicados por `k`. Reutilizá el método anterior.
-13. `void multiplicarColumna(int col, double escalar)` — análogo a `multiplicarFila`.
-14. `Matriz sumar(Matriz otra)` — devuelve la suma de ambas matrices. Lanzá una excepción si las dimensiones no coinciden.
-15. `Matriz restar(Matriz otra)` — análogo a `sumar`.
-16. `Matriz transpuesta()` — devuelve la traspuesta (filas y columnas intercambiadas).
-17. `void intercambiarFilas(int f1, int f2)` — intercambia in-place dos filas.
-18. **Desafío:** `void intercambiarColumnas(int c1, int c2)` — análogo a `intercambiarFilas`.
+1. `int filas()` - cantidad de filas.
+2. `int columnas()` - cantidad de columnas (asumí que es regular).
+3. `double obtener(int i, int j)` - valor en la posición `(i, j)`.
+4. `boolean esCuadrada()` - `true` si tiene igual cantidad de filas y columnas.
+5. `boolean esIdentidad()` - `true` si es cuadrada, tiene `1.0` en la diagonal y `0.0` en el resto.
+6. `boolean esDiagonal()` - `true` si todos los elementos fuera de la diagonal principal son `0.0`.
+7. `double traza()` - suma de los elementos de la diagonal principal. Requiere que sea cuadrada.
+8. `boolean esSimetrica()` - `true` si `valores[i][j] == valores[j][i]` para todo `(i, j)`.
+9. `boolean equals(Matriz otra)` - `true` si tienen las mismas dimensiones y valores posición a posición.
+10. `Matriz copiar()` - devuelve una nueva `Matriz` con los mismos valores (copia profunda).
+11. `void multiplicarFila(int fila, double escalar)` - multiplica in-place todos los valores de una fila.
+12. `Matriz escalar(double k)` - devuelve una nueva `Matriz` con todos los valores multiplicados por `k`. Reutilizá el método anterior.
+13. `void multiplicarColumna(int col, double escalar)` - análogo a `multiplicarFila`.
+14. `Matriz sumar(Matriz otra)` - devuelve la suma de ambas matrices. Lanzá una excepción si las dimensiones no coinciden.
+15. `Matriz restar(Matriz otra)` - análogo a `sumar`.
+16. `Matriz transpuesta()` - devuelve la traspuesta (filas y columnas intercambiadas).
+17. `void intercambiarFilas(int f1, int f2)` - intercambia in-place dos filas.
+18. **Desafío:** `void intercambiarColumnas(int c1, int c2)` - análogo a `intercambiarFilas`.
 
 Escribí pruebas unitarias para cada método. Prestá especial atención a los casos borde: matriz 1×1, matrices no cuadradas, dimensiones incompatibles.
 
@@ -327,7 +327,7 @@ Escribí pruebas unitarias para cada método. Prestá especial atención a los c
 
 El Picross es un juego de lógica donde se revela una imagen en una cuadrícula según pistas numéricas. Las pistas indican cuántas celdas consecutivas deben estar pintadas en cada fila o columna.
 
-**Ejercicio C2.1 — Dibujar**
+**Ejercicio C2.1 - Dibujar**
 
 Dada una matriz de booleanos, dibujá el nanograma usando el carácter `■` (`\u25A0`) para las celdas llenas y un espacio para las vacías.
 
@@ -352,7 +352,7 @@ Salida esperada:
  ■ ■ 
 ```
 
-**Ejercicio C2.2 — Dibujar con pistas**
+**Ejercicio C2.2 - Dibujar con pistas**
 
 Extendé el método anterior para mostrar también las pistas de cada fila a la derecha, separadas por ` | `.
 
@@ -426,7 +426,7 @@ Salida esperada:
 - No es necesario encontrar la solución óptima: alcanza con que sea correcta.
 - Recomendamos representar la solución como `boolean[][]` y mostrarla con los métodos ya desarrollados.
 
-> **Sugerencia:** este problema es considerablemente más difícil de lo que aparenta. Una estrategia de fuerza bruta —probar todas las combinaciones posibles de celdas— es válida para tamaños pequeños. En Algoritmos y Programación 2 veremos técnicas para resolverlo eficientemente con backtracking. No hay vergüenza en intentarlo y abandonarlo: en el camino habrá muchos descubrimientos valiosos.
+> **Sugerencia:** este problema es considerablemente más difícil de lo que aparenta. Una estrategia de fuerza bruta -probar todas las combinaciones posibles de celdas- es válida para tamaños pequeños. En Algoritmos y Programación 2 veremos técnicas para resolverlo eficientemente con backtracking. No hay vergüenza en intentarlo y abandonarlo: en el camino habrá muchos descubrimientos valiosos.
 
 ---
 

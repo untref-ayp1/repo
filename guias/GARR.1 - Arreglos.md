@@ -26,7 +26,6 @@ int[] temps = {22, 18, 31, 27, 15, 29, 24};
 > Prestá atención a qué pasa con el índice 10: leé el mensaje e identificá su significado.
 
 ### A2. Acumulador
-`#jshell`
 
 Dado un arreglo de notas enteras, calculá la suma total y el promedio. Mostrá si el promedio es promoción (>= 7.0).
 ```java
@@ -61,7 +60,7 @@ String buscar = "naranja";
 > Usá `.equals()` para comparar `Strings`, no `==`. ¿Por qué son distintos en Java?
 
 ### A4. Array de objetos
-Creá una clase `Producto` con los atributos `nombre` (`String`) y `precio` (`double`). Luego trabajá con un array de productos.
+Creá una clase `Producto` con los atributos `nombre:String` y `precio:double`. Luego trabajá con un array de productos.
 
 ```java
 class Producto {
@@ -158,7 +157,7 @@ Esta sección integra el uso de arreglos con objetos y organización del código
 ### C1. Maratón de cine
 Un cineclub programa una maratón con varias películas en orden. Cada película tiene un título, un género y una duración en minutos.
 
-Definí la clase `Pelicula` con los atributos `titulo` (`String`), `genero` (`String`) y `duracion` (`int`). Resolvé el ejercicio desde un `App.java` que contenga el método `main`. En `App` deberás crear el `Pelicula[] cartelera` de ejemplo y escribir los métodos necesarios como funciones estáticas de la clase `App` (o directamente implementarlos dentro de `main` si preferís). Implementá las siguientes tareas y llamalas desde `main`:
+Definí la clase `Pelicula` con los atributos `titulo:String`, `genero:String` y `duracion:int`. Resolvé el ejercicio desde un `App.java` que contenga el método `main`. En `App` deberás crear el `cartelera:Pelicula[]` de ejemplo y escribir los métodos necesarios como funciones estáticas de la clase `App` (o directamente implementarlos dentro de `main` si preferís). Implementá las siguientes tareas y llamalas desde `main`:
 
 - Imprimí el título y la duración de todas las películas que superen los 100 minutos.
 - Calculá y mostrá la duración total de la maratón.

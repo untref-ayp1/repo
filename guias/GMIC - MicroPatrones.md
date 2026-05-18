@@ -274,12 +274,12 @@ double[] precios = {
 
 Implementá la clase `SerieTemporal` con las siguientes operaciones:
 
-1. `double variacion(int i)` — variación entre el elemento `i` y el anterior (`precios[i] - precios[i-1]`).
-2. `int diasEnAlza()` — cantidad de días donde el precio subió respecto al anterior.
-3. `int diasEnBaja()` — ídem para días donde bajó.
-4. `int rachaMaximaAlza()` — cantidad máxima de días consecutivos en alza.
-5. `double rendimientoTotal()` — variación porcentual entre el primer y el último precio.
-6. **Desafío:** `int mejorMomentoDeCompra()` — índice del día en que conviene comprar para maximizar la ganancia si se vende en el último día. ¿Qué patrón usás?
+1. `double variacion(int i)` - variación entre el elemento `i` y el anterior (`precios[i] - precios[i-1]`).
+2. `int diasEnAlza()` - cantidad de días donde el precio subió respecto al anterior.
+3. `int diasEnBaja()` - ídem para días donde bajó.
+4. `int rachaMaximaAlza()` - cantidad máxima de días consecutivos en alza.
+5. `double rendimientoTotal()` - variación porcentual entre el primer y el último precio.
+6. **Desafío:** `int mejorMomentoDeCompra()` - índice del día en que conviene comprar para maximizar la ganancia si se vende en el último día. ¿Qué patrón usás?
 
 > Para `rachaMaximaAlza`, llevá dos contadores: uno para la racha actual y otro para la máxima encontrada hasta el momento. ¿Qué micro patrones reconocés ahí?
 

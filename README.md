@@ -6,11 +6,11 @@ Este repositorio contiene el material de la cátedra Algoritmos y Programación 
 
 ```
 .
-├── examenes — Enunciados y resoluciones de exámenes.
-├── greenfoot — Proyectos y ejemplos en Greenfoot (Java).
-├── guias — Ejercicios de clase.
-├── notebooks — Notebooks con ejemplos y análisis.
-└── trabajos-practicos — Enunciados de los TP.
+├── examenes - Enunciados y resoluciones de exámenes.
+├── greenfoot - Proyectos y ejemplos en Greenfoot (Java).
+├── guias - Ejercicios de clase.
+├── notebooks - Notebooks con ejemplos y análisis.
+└── trabajos-practicos - Enunciados de los TP.
 ```
 
 **Nota:** si ves alguna carpeta que falta describir, abrí un [issue](https://github.com/untref-ayp1/repo/issues) o mandá un PR con la aclaración.
