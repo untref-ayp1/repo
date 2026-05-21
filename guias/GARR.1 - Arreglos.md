@@ -202,6 +202,7 @@ Definí la clase `Libro` con los atributos anteriormente dichos. A continuación
 
 - Listá los títulos de los libros con stock crítico: menos de 3 ejemplares.
 - Calculá el total de ejemplares en la librería.
+- Obtener los libros de un autor, pasado como parámetro.
 - Identificá el autor con más títulos distintos en el inventario. Si hay empate, mostrá el primero encontrado.
 - Mostrá el título del libro con más ejemplares disponibles.
 
@@ -223,6 +224,7 @@ Salida esperada
 
     Stock crítico: El Aleph, Bestiario, El amor en los tiempos
     Total de ejemplares: 24
+    Libros de Cortázar: Rayuela, Bestiario, Final del juego
     Autor con más títulos: Cortázar (3 títulos)
     Más ejemplares: Cien años de soledad
 
