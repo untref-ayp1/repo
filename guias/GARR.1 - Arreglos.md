@@ -156,15 +156,16 @@ Esta sección integra el uso de arreglos con objetos y organización del código
 
 ### C1. Maratón de cine
 Un cineclub programa una maratón con varias películas en orden. Cada película tiene un título, un género y una duración en minutos.
+Definí la clase `Pelicula` con los atributos `titulo:String`, `genero:String` y `duracion:int`.
+Definí la clase `MaratonDePeliculas` que reciba una `cartelera:Pelicula[]` en su constructor e implemente los siguientes métodos:
 
-Definí la clase `Pelicula` con los atributos `titulo:String`, `genero:String` y `duracion:int`. Resolvé el ejercicio desde un `App.java` que contenga el método `main`. En `App` deberás crear el `cartelera:Pelicula[]` de ejemplo y escribir los métodos necesarios como funciones estáticas de la clase `App` (o directamente implementarlos dentro de `main` si preferís). Implementá las siguientes tareas y llamalas desde `main`:
+- `peliculasLargas(minutos:int):Pelicula[]` devuelve todas las películas cuya duración supere los minutos indicados.
+- `duracionTotal():int` devuelve la duración total de la maratón en minutos.
+- `peliculaMasCorta():Pelicula` devuelve la película de menor duración.
+- `rachaPorGenero(genero:String):int` devuelve la longitud de la racha más larga de películas contiguas del género indicado.
+- `generoRachaMasLarga():String` devuelve el género con la racha más larga entre todos los géneros.
 
-- Imprimí el título y la duración de todas las películas que superen los 100 minutos.
-- Calculá y mostrá la duración total de la maratón.
-- Encontrá y mostrá el título de la película más corta.
-- Encontrá la racha más larga de películas contiguas del mismo género e informá el género y cuántas películas la forman.
-
-La idea es que el alumno practique organizar código en `App.java` y en el `main` maneje el arreglo de `Pelicula` y las llamadas a las funciones de reporte.
+Desde `App.java`, creá una instancia de `MaratonDePeliculas` con una cartelera de ejemplo e invocá todos los métodos desde `main`.
 
 ```java
 Pelicula[] cartelera = {
@@ -189,7 +190,9 @@ Salida esperada
         Interstellar (169)
     Duración total: 898 minutos
     Más corta: Clue
-    Racha más larga: "terror", 3 películas consecutivas
+    Racha por género "thriller", 2 películas consecutivas
+    Racha más larga: "terror"
+    Racha por género "terror", 3 películas consecutivas
 
 > Para la racha, tené en cuenta que puede haber empates: si dos géneros tienen la misma racha máxima, alcanza con devolver el primero encontrado.
 
@@ -266,7 +269,7 @@ int[] gastos = {3, 5, 2, 7, 1, 4, 6};
 int x1 =  9; // 3 + 5 + 2 = 10 >= 9
 int x2 =  7; // existe un elemento exacto
 int x3 = 14; // 5 + 2 + 7
-int x4 = 20; // no existe
+int x4 = 30; // no existe
 ```
 
 Salida esperada
@@ -274,7 +277,7 @@ Salida esperada
     x=10 → true
     x=7  → true
     x=14 → true
-    x=20 → false
+    x=30 → false
 
 > **Sugerencia:** Este problema es relativamente simple, si no se restringe la cantidad de veces que puede recorrerse el array. Se puede realizar recorriendo los datos una única vez... ¿Cuándo conviene dejar de sumar?
 
