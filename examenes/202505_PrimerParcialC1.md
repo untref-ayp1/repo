@@ -35,8 +35,8 @@ int x(int y, int z) {
 * **b.** Se envía el mensaje `comer` a un objeto referenciado por la variable `comensal`, enviándole como parámetro un nuevo objeto de tipo `Comida` pasándole como parámetro el String "lasagna".
 
 **Describir la semántica para:**
-* **c.** ```java Comida fideos = new Comida ("fideos"); ```
-* **d.** ```java int suma = calculadora.sumar (10, 5); ```
+* **c.** `Comida fideos = new Comida ("fideos");`
+* **d.** `int suma = calculadora.sumar (10, 5);`
 * **e.** Escriba una sentencia válida en Java que tenga 6 elementos o más, y luego describa su semántica.
 
 
