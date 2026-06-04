@@ -11,6 +11,7 @@ Como referencia, la Parte A debería tomar aproximadamente 45-60 minutos, la Par
 En esta sección se ejercitan las operaciones básicas sobre matrices: declaración e inicialización, acceso por coordenadas `(i, j)`, recorrido con doble `for` y acumulación de valores. El foco está en construir un modelo mental claro de cómo se almacenan y recorren los arreglos bidimensionales en Java, y en evitar errores comunes de índices.
 
 ### A1. Declaración, acceso y límites
+#jshell
 
 Dado el siguiente arreglo bidimensional que representa las temperaturas registradas en tres ciudades durante cuatro días:
 
@@ -28,7 +29,9 @@ double[][] temps = {
 2. Imprimí la temperatura de la segunda ciudad (fila 1) en el tercer día (columna 2).
 3. Reemplazá la temperatura de la primera ciudad en el último día por `99.9`.
 4. Intentá acceder a `temps[3][0]` y observá qué excepción lanza Java. ¿En qué momento ocurre: al compilar o al ejecutar?
-5. Recorrelo con un doble `for` e imprimí todos los valores con el formato `temps[i][j] = valor`.
+5. Recorrelo con un doble `for` e imprimí todos los valores con el formato `temps[<i>][<j>] = <valor>` (**Tip:** utilizar `System.out.printf`)
+6. Imprimir la ciudad con la temperatura más baja.
+7. Devolver un array con las temperaturas promedio de cada ciudad.
 
 > Prestá atención a la diferencia entre `temps.length` (filas) y `temps[0].length` (columnas). ¿Qué pasaría si la matriz fuera irregular, es decir, si cada fila tuviera distinta longitud?
 
