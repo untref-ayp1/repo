@@ -2,7 +2,7 @@
 
 ## Primer Parcial C1
 ### Ejercicio 1 { arrays }
-[cite_start]Escribir un método en Java que reciba un array de decimales por parámetro, y devuelva otro array con la diferencia de cada elemento con el mayor del array original.
+Escribir un método en Java que reciba un array de decimales por parámetro, y devuelva otro array con la diferencia de cada elemento con el mayor del array original.
 
 **Firma del método:**
 ```java
@@ -13,7 +13,6 @@ double[] diferenciaAlMaximo (double[] valores)
 ```java
 [1.0, 3.0, 4.0, 8.5] -> [7.5, 5.5, 4.5, 0.0]
 ```
-
 
 ### Ejercicio 2 { código }
 
@@ -28,15 +27,14 @@ int x(int y, int z) {
 }
 ```
 
-
 ### Ejercicio 3 { sintaxis, semántica }
 **Escribir la sintaxis para:**
 * **a.** Si la variable `x` contiene un valor mayor a diez se imprime por pantalla su valor, si no se incrementa en 1.
 * **b.** Se envía el mensaje `comer` a un objeto referenciado por la variable `comensal`, enviándole como parámetro un nuevo objeto de tipo `Comida` pasándole como parámetro el String "lasagna".
 
 **Describir la semántica para:**
-* **c.** ```java Comida fideos = new Comida ("fideos"); ```
-* **d.** ```java int suma = calculadora.sumar (10, 5); ```
+* **c.** `Comida fideos = new Comida ("fideos");`
+* **d.** `int suma = calculadora.sumar (10, 5);`
 * **e.** Escriba una sentencia válida en Java que tenga 6 elementos o más, y luego describa su semántica.
 
 
